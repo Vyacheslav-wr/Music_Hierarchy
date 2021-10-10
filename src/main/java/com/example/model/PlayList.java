@@ -35,31 +35,18 @@ public class PlayList{
         LOGGER.info("MODEL: Song {} was successfully deleted from the disk", song.getName());
     }
 
-    public Song getSongFromPlaylist(Song song){
+    public Song getSongFromPlaylist(String name){
         LOGGER.debug("MODEL: Playlist with name: {} getOperation()", this.name);
         for(Song currentSong : this.playList){
-            if(song.equals(currentSong)){
+            if(currentSong.getName().equals(name)){
                 LOGGER.info("MODEL: Song with name {} was found in playlist with name: {}",
-                        song.getName(), this.name);
+                        name, this.name);
                 return currentSong;
             }
         }
         LOGGER.warn("MODEL: Song with name {} was not found in playlist with name: {}",
-                song.getName(), this.name);
+                name, this.name);
         return null;
-    }
-
-    public void updateSong(Song song){
-        LOGGER.debug("MODEL: Song with name: {} updateOperation() in the playlist with name: {}",
-                song.getName(), this.name);
-        Song oldSong = getSongFromPlaylist(song);
-
-        oldSong.setAuthor(ConsoleFunctions.consoleInputAuthorName());
-        oldSong.setDuration(ConsoleFunctions.consoleInputDuration());
-        oldSong.setGenre(ConsoleFunctions.consoleInputGenre());
-        oldSong.setName(ConsoleFunctions.consoleInputSongName());
-        LOGGER.info("MODEL: Song with name: {} was successfully updated in the playlist with name: {}",
-                song.getName(), this.name);
     }
 
     public double evaluateDuration(){

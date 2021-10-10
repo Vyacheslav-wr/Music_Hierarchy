@@ -1,6 +1,9 @@
 package com.example.model;
 
+import com.example.Console.ConsoleFunctions;
 import com.example.model.Genres;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Song implements Comparable<Song>{
 
@@ -8,6 +11,7 @@ public class Song implements Comparable<Song>{
     private int duration;
     private String author;
     private Genres genre;
+    private final static Logger LOGGER = LoggerFactory.getLogger(PlayList.class);
 
     public String getName() { return name; }
 
@@ -24,6 +28,17 @@ public class Song implements Comparable<Song>{
     public Genres getGenre() { return genre; }
 
     public void setGenre(Genres genre) { this.genre = genre; }
+
+    public void updateSong(String authorName, Integer duration, Genres genre, String name){
+        LOGGER.debug("MODEL: Song with name: {} updateOperation()",
+                this.getName());
+        this.setAuthor(authorName);
+        this.setDuration(duration);
+        this.setGenre(genre);
+        this.setName(name);
+        LOGGER.info("MODEL: Song with name: {} was successfully updated",
+                this.getName());
+    }
 
     @Override
     public int compareTo(Song o) {

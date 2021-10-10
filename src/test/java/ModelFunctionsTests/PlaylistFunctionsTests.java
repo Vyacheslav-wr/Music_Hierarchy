@@ -83,8 +83,9 @@ public class PlaylistFunctionsTests {
     public void getSongFromPlaylist(){
         PlayList playList = new PlayList("Test");
         Song song1 = new Song();
+        song1.setName("First");
         playList.addToPlaylist(song1);
 
-        Assertions.assertEquals(song1.getClass(), playList.getSongFromPlaylist(song1).getClass());
+        Assertions.assertEquals("First", playList.getSongFromPlaylist("First").getName());
     }
 }
