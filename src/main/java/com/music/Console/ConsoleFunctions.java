@@ -1,6 +1,6 @@
-package com.example.Console;
+package com.music.Console;
 
-import com.example.model.Genres;
+import com.music.model.Genres;
 
 import java.util.Scanner;
 

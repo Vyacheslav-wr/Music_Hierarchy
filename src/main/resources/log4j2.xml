@@ -10,11 +10,11 @@
         </File>
     </Appenders>
     <Loggers>
-        <Logger name="com.example.model" level="debug" additivity="false">
+        <Logger name="com.music.model" level="debug" additivity="false">
             <AppenderRef ref="console"/>
             <AppenderRef ref="file"/>
         </Logger>
-        <Logger name="com.example" level="warn" additivity="false">
+        <Logger name="com.music" level="warn" additivity="false">
             <AppenderRef ref="console"/>
             <AppenderRef ref="file"/>
         </Logger>

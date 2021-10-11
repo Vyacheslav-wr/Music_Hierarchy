@@ -1,6 +1,5 @@
-package com.example.model;
+package com.music.model;
 
-import com.example.Console.ConsoleFunctions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,9 +1,9 @@
 package ModelFunctionsTests;
 
-import com.example.model.Disk;
-import com.example.model.Genres;
-import com.example.model.PlayList;
-import com.example.model.Song;
+import com.music.model.Disk;
+import com.music.model.Genres;
+import com.music.model.PlayList;
+import com.music.model.Song;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
