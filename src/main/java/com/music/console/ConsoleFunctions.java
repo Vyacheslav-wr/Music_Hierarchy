@@ -1,4 +1,4 @@
-package com.music.Console;
+package com.music.console;
 
 import com.music.model.Genres;
 

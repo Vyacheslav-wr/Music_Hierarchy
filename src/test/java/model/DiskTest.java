@@ -1,4 +1,4 @@
-package ModelFunctionsTests;
+package model;
 
 import com.music.model.Disk;
 import com.music.model.Genres;
@@ -12,7 +12,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-public class DiskFunctionsTests {
+public class DiskTest {
 
     @Test
     public void addPlaylistToDiskTest(){

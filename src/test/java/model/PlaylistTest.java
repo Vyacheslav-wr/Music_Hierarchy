@@ -1,4 +1,4 @@
-package ModelFunctionsTests;
+package model;
 
 import com.music.model.PlayList;
 import com.music.model.Song;
@@ -10,7 +10,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-public class PlaylistFunctionsTests {
+public class PlaylistTest {
 
     @ParameterizedTest
     @MethodSource("parametersForEvaluation")

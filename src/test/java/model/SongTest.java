@@ -1,11 +1,11 @@
-package ModelFunctionsTests;
+package model;
 
 import com.music.model.Genres;
 import com.music.model.Song;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class SongFunctionsTests {
+public class SongTest {
 
     @Test
     public void updateSongTest(){
